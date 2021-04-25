@@ -21,8 +21,6 @@ address {
     display: inline-flex;
     margin-right: 80vw;
     width: 120px;
-
-    border: 1px solid blue;
 }
 
 nav {
@@ -36,7 +34,6 @@ nav {
 }
 
 nav .menu {
-    border: 1px solid blue;
     width: 300px;
     text-decoration: none;
     text-align: center;
@@ -153,7 +150,6 @@ h3 {
 
     display: flex;
     flex-basis: 500px;
-    border: 1px solid red;
     height: 550px;
     flex-direction: row;
     flex-wrap: wrap;
