@@ -1,0 +1,142 @@
+address,
+nav,
+button,
+.winedescription,
+footer {
+    font-family: Montserrat, Times, sans-serif;
+}
+
+address {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+nav {
+
+    position: static;
+    width: 68px;
+    height: 21px;
+    left: 776px;
+    top: 83px;
+
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+
+    color: #FFFFFF;
+}
+
+nav .menu {
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+nav .menu:active,
+.footer:active {
+    color: #830303;
+}
+
+nav .menu:hover,
+.footer:hover {
+    text-decoration-line: underline;
+}
+
+button {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background: #99862A
+}
+
+button:hover {
+    background-color: #830303;
+}
+
+
+#article1 {
+    position: static;
+    width: 1350px;
+    height: 400px;
+    left: 0px;
+    top: 670px;
+    border: thick solid #830303;
+
+
+
+    background: #282828;
+}
+
+h3 {
+
+    font-family: Playfair display,
+        Times,
+        sans-serif;
+    color: #FFFFFF;
+    text-align: center;
+
+    margin-top: 20px
+}
+
+.winedescription {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+
+#wineglass {
+    opacity: 0.9;
+    ;
+}
+
+footer {
+    position: static;
+    background-color: #998431;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+
+
+    text-align: center;
+    word-spacing: 0.5em;
+}
+
+.footer {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+h3 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
