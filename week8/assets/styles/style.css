@@ -1,0 +1,110 @@
+.footer-item,
+.main-text,
+.main-columns {
+    font-family: Roboto Slab,
+        Arial,
+        serif;
+}
+
+.navbar-logo {
+    max-width: 100%;
+}
+
+.navbar-logo-container {
+    max-width: 50%;
+}
+
+.navbar-btn,
+.main-btn,
+.card-news-btn {
+    background-color: #5222D0;
+    color: #FFFFFF;
+    border-radius: 100px;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+.main-text {
+    padding: 3em 0.5em;
+}
+
+.main-text-header {
+    font-weight: bold;
+}
+
+.main-menu {
+    padding-top: 20%;
+}
+
+.main-menu-item {
+    text-decoration: none;
+    color: #5222D0;
+    padding: 2%;
+}
+
+.main-btn-container {
+    max-width: 70%;
+    padding: 4% 0%;
+}
+
+.main-btn {
+    max-width: 100%;
+    padding: 0.7rem 1.1rem;
+    font-weight: 900;
+    font-size: 1.8em;
+}
+
+.main-img {
+    max-width: 100%;
+}
+
+.card-img-top {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-header {
+    height: 60vh;
+    background-color: #EC615B;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-1,
+.card-4 {
+    border: 1px solid #EC615B;
+}
+
+.card {
+    padding: 3%;
+}
+
+.footer {
+    margin-top: 2%;
+}
+
+.footer-item {
+    text-decoration: none;
+    color: black;
+    padding: 2%;
+}
+
+.card-news {
+    background-color: #EC615B;
+}
+
+.card-news-title {
+    color: white;
+}
+
+.card-news-btn {
+    margin: 5% 0%;
+    font-weight: 900;
+}
+
+.email-input {
+    height: 7vh;
+}
