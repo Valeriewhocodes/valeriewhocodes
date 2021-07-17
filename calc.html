@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <button onClick="calcSum()">+</button>
+    <button onClick="calcDifference()">-</button>
+    <button onClick="calcMultiply()">*</button>
+    <button onClick="calcDivide()">/</button>
+
+    <script type="text/javascript">
+        function calcSum() {
+            let x = prompt("Первое число?", 1);
+            let y = prompt("Второе число?", 2);
+
+            alert(+x + +y);
+        }
+
+        function calcDifference() {
+            let x = prompt("Первое число?", 1);
+            let y = prompt("Второе число?", 2);
+
+            alert(x - y);
+        }
+
+        function calcMultiply() {
+            let x = prompt("Первое число?", 1);
+            let y = prompt("Второе число?", 2);
+
+            alert(x * y);
+        }
+
+        function calcDivide() {
+            let x = prompt("Первое число?", 1);
+            let y = prompt("Второе число?", 2);
+
+            alert(x / y);
+        }
+    </script>
+</body>
+
+</html>
