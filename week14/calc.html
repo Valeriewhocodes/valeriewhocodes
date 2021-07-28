@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="text" id="number1" />
+    <input type="text" id="number2" />
+    <div>
+        <button onClick="calcSum()">+</button>
+        <button onClick="calcDifference()">-</button>
+        <button onClick="calcMultiply()">*</button>
+        <button onClick="calcDivide()">/</button>
+    </div>
+    <div>Result: <span id="out"></span></div>
+
+    <script type="text/javascript">
+        let number1;
+        let number2;
+
+        let out = document.getElementById('out');
+
+        function calcSum() {
+            number1 = document.getElementById('number1').value;
+            number1 = parseInt(number1)
+            number2 = document.getElementById('number2').value;
+            number2 = parseInt(number2)
+
+            out.innerHTML = +number1 + +number2;
+        }
+
+
+        function calcDifference() {
+            number1 = document.getElementById('number1').value;
+            number1 = parseInt(number1)
+            number2 = document.getElementById('number2').value;
+            number2 = parseInt(number2)
+
+            out.innerHTML = number1 - number2;
+        }
+
+        function calcMultiply() {
+            number1 = document.getElementById('number1').value;
+            number1 = parseInt(number1)
+            number2 = document.getElementById('number2').value;
+            number2 = parseInt(number2)
+
+            out.innerHTML = number1 * number2;
+        }
+
+        function calcDivide() {
+            number1 = document.getElementById('number1').value;
+            number1 = parseInt(number1)
+            number2 = document.getElementById('number2').value;
+            number2 = parseInt(number2)
+
+            out.innerHTML = number1 / number2;
+        }
+    </script>
+</body>
+
+</html>
