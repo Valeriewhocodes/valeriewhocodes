@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    .form {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: 0 25vw;
+        background-color: lavenderblush;
+        color: indigo;
+        border-radius: 20px;
+    }
+
+    .form-item {
+        border: 1px solid aquamarine;
+        border-radius: 5px;
+    }
+
+    .button {
+        margin: 20px 0;
+        color: indigo;
+        background-color: white;
+        border: 1px solid aquamarine;
+        border-radius: 5px;
+        font-size: 15px;
+    }
+</style>
+
+<body>
+    <div class="form">
+        <p>
+            Name
+        </p>
+        <input type="text" class="form-item" id="name">
+        <p>
+            Surname
+        </p>
+        <input type="text" class="form-item" id="surname">
+        <p>
+            Sex
+        </p>
+        <input type="text" class="form-item" id="sex">
+        <p>
+            E-mail
+        </p>
+        <input type="text" class="form-item" id="email">
+        <p>
+            Password
+        </p>
+        <input type="password" class="form-item" id="password">
+        <button class="button" id="submit" onclick="sayHi()">Submit</button>
+    </div>
+
+    <script type="text/javascript">
+        let name = document.getElementById("name").value;
+        let surname = document.getElementById("surname").value;
+        let sex = document.getElementById("sex").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        function checkName() {
+            if ("name" == '') {
+                alert('PLease, fill in all form fields!');
+            }
+        }
+
+        function sayHi() {
+            let name = document.getElementById("name").value;
+            alert(`Hello, ${name}! `);
+        }
+    </script>
+</body>
+
+</html>

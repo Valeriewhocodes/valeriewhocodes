@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIO</title>
+</head>
+
+<body>
+    <label for="fio">Введите ФИО
+        <input type="text" id="fio">
+    </label>
+    <label for="surname">Фамилия
+        <input type="text" id="surname">
+    </label>
+    <label for="name">Имя
+        <input type="text" id="name">
+    </label>
+    <label for="fathername">Отчество
+        <input type="text" id="fathername">
+    </label>
+    <button id="btn" onclick="checkFio()">
+        Преобразовать
+    </button>
+    <script type="text/javascript">
+        function checkFio() {
+            let fio = document.getElementById("fio").value;
+            fio = fio.trim().replace(/\s+/g, " ").split(' ');
+            console.log(fio);
+
+            let surname = fio[0];
+            surname = surname.trim();
+            let surnameToUpper = surname.substr(0, 1);
+            surnameToUpper = surnameToUpper.toUpperCase();
+            console.log(surnameToUpper);
+            surnameToLower = surname.substr(1);
+            surnameToLower = surnameToLower.toLowerCase();
+            console.log(surnameToLower);
+            let surnameTrue = surnameToUpper + surnameToLower;
+            console.log(surnameTrue);
+
+            let name = fio[1];
+            name = name.trim();
+            let nameToUpper = name.substr(0, 1);
+            nameToUpper = nameToUpper.toUpperCase();
+            console.log(nameToUpper);
+            nameToLower = name.substr(1);
+            nameToLower = nameToLower.toLowerCase();
+            console.log(nameToLower);
+            let nameTrue = nameToUpper + nameToLower;
+            console.log(nameTrue);
+
+            let fathername = fio[2];
+            fathername = fathername.trim();
+            let fathernameToUpper = fathername.substr(0, 1);
+            fathernameToUpper = fathernameToUpper.toUpperCase();
+            console.log(fathernameToUpper);
+            fathernameToLower = fathername.substr(1);
+            fathernameToLower = fathernameToLower.toLowerCase();
+            console.log(fathernameToLower);
+            let fathernameTrue = fathernameToUpper + fathernameToLower;
+            console.log(fathernameTrue);
+
+            let outSurname = document.getElementById('surname');
+            let outName = document.getElementById('name');
+            let outFathername = document.getElementById('fathername');
+            outSurname.value = surnameTrue;
+            outName.value = nameTrue;
+            outFathername.value = fathernameTrue;
+        }
+    </script>
+</body>
+
+</html>

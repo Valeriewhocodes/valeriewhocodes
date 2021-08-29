@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <h1>Узнай цену машины своей мечты!</h1>
+    <form>
+        <select id="mark">
+            <option>Марка</option>
+            <option value="300000">BMW</option>
+            <option value="400000">Mercedes</option>
+            <option value="500000">Porsche</option>
+        </select>
+
+        <select id="year" disabled>
+            <option>Состояние</option>
+            <option value="600000">Новая</option>
+            <option value="300000">Б/У</option>
+        </select>
+
+        <fieldset id="check">
+            <legend>Тип кузова</legend>
+            <input type="checkbox" name="checkbox" value="20000">Купе
+            <input type="checkbox" name="checkbox" value="40000">Кроссовер
+            <input type="checkbox" name="checkbox" value="50000">Внедорожник
+        </fieldset>
+
+        <fieldset id="fuel">
+            <legend>Топливо</legend>
+            <input type="radio" name="fuel" value="30000">Газ
+            <input type="radio" name="fuel" value="50000">Бензин
+        </fieldset>
+
+        <button type="button" id="btn" onClick="getSum()">Рассчитать</button>
+    </form>
+
+    <script src="calc.js"></script>
+</body>
+
+</html>

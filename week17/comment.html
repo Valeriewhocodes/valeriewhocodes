@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment</title>
+</head>
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #comment,
+    #result {
+        margin: 20px;
+        height: 20vh;
+    }
+
+    #result {
+        width: 30vw;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <hi>
+        Hi, how are you?
+    </hi>
+    <input type="text" id="comment">
+    <button id="button" onclick="checkSpam()">Send</button>
+    <div id="result"></div>
+
+    <script type="text/javascript">
+        function checkSpam() {
+            let comment = document.getElementById('comment').value;
+            let commentClean = comment.replace(/viagra/gi, '***').replace(/xxx/gi, '***');
+            let result = document.getElementById('result');
+            result.innerHTML += commentClean + "<br/>";
+        }
+
+        button.addEventListener("click", clearInput);
+
+        function clearInput() {
+            document.getElementById('comment').value = "";
+        }
+    </script>
+</body>
+
+</html>
