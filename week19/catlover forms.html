@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<form action="#">
+    <div>
+        <input type="text" id="name" placeholder="Name" />
+    </div>
+    <div>
+        <p>Cat breed</p>
+        <select id="breed">
+            <option value="Scottish fold">Scottish fold</option>
+            <option value="Sphynx cat">Sphynx cat</option>
+            <option value="Russian blue">Russian blue</option>
+        </select>
+    </div>
+    <fieldset>
+        <legend>Type of food</legend>
+        <select id="food">
+            <option value="Wet">Wet</option>
+            <option value="Dry">Dry</option>
+            <option value="All natural">All natural</option>
+        </select>
+    </fieldset>
+    <button type="button" action="#" onclick="myCat()">Save</button></div>
+</form>
+
+<script type="text/javascript">
+    class Cat {
+        constructor(name, breed, food) {
+            this.name = name;
+            this.breed = breed;
+            this.food = food;
+        }
+    }
+
+    function myCat() {
+        let newCat = new Cat(document.getElementById('name').value, document.getElementById('breed').value, document
+            .getElementById('food').value);
+        console.log(newCat);
+    }
+
+
+
+
+
+
+
+    //console.log(newCat);
+    //document.getElementById('name').value, document.getElementById('breed').value, document.getElementById('food').value
+</script>
+</body>
+
+</html>
