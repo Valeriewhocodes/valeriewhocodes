@@ -34,46 +34,56 @@
 </style>
 
 <body>
-    <div class="form">
-        <p>
-            Name
-        </p>
-        <input type="text" class="form-item" id="name">
-        <p>
-            Surname
-        </p>
-        <input type="text" class="form-item" id="surname">
-        <p>
-            Sex
-        </p>
-        <input type="text" class="form-item" id="sex">
-        <p>
-            E-mail
-        </p>
-        <input type="text" class="form-item" id="email">
-        <p>
-            Password
-        </p>
-        <input type="password" class="form-item" id="password">
-        <button class="button" id="submit" onclick="sayHi()">Submit</button>
-    </div>
+    <form class="form">
+
+        <input placeholder="name" type="text" class="form-item" id="name">
+
+        <input placeholder="surname" type="text" class="form-item" id="surname">
+
+        <input type="radio" class="form-item" id="sexfemale" name="sex" required>Female
+        <input type="radio" class="form-item" id="sexmale" name="sex" required>Male
+
+        <input placeholder="email" type="text" class="form-item" id="email">
+
+        <input placeholder="password" type="password" class="form-item" id="password">
+
+        <button type="submit" action="#" class="button" id="button">Submit</button>
+    </form>
 
     <script type="text/javascript">
-        let name = document.getElementById("name").value;
-        let surname = document.getElementById("surname").value;
-        let sex = document.getElementById("sex").value;
-        let email = document.getElementById("email").value;
-        let password = document.getElementById("password").value;
+        //let name = document.getElementById("name").value;
+        //let surname = document.getElementById("surname").value;
+        //let sex = document.getElementById("sex").value;
+        //let email = document.getElementById("email").value;
+        //let password = document.getElementById("password").value;
+
+        button.addEventListener("click", checkName);
+        //button.addEventListener("click", sayHi);
+
 
         function checkName() {
-            if ("name" == '') {
-                alert('PLease, fill in all form fields!');
-            }
-        }
-
-        function sayHi() {
             let name = document.getElementById("name").value;
-            alert(`Hello, ${name}! `);
+            let surname = document.getElementById("surname").value;
+            //let sex = document.getElementById("sex").value;
+            let email = document.getElementById("email").value;
+            let validEmail = /^[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}$/i
+            let password = document.getElementById("password").value;
+
+            if (name.length <= 0) {
+                alert("Please enter your first name");
+                return false;
+            }
+            if (surname.length <= 0) {
+                alert("Please enter your last name");
+                return false;
+            }
+
+            if (password.length <= 7) {
+                alert("Your password needs to be longer than 7 symbols!");
+                return false;
+            } else {
+                alert(`Hello, ${name} ${surname}! `);
+            }
         }
     </script>
 </body>

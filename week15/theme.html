@@ -13,6 +13,16 @@
             border: 1px solid black;
             color: red;
         }
+
+        #dark-theme {
+            background-color: black;
+            color: white;
+        }
+
+        #light-theme {
+            background-color: thistle;
+            color: black;
+        }
     </style>
 </head>
 
@@ -20,13 +30,13 @@
     <div class="container" id="container">
         Choose your theme :
         <select id="theme">
-            <option value="dark">Dark mode</option>
-            <option value="light">Light mode</option>
-            <option value="night">Night shift</option>
+            <option value="dark" id="dark-theme">Dark mode</option>
+            <option value="light" id="light-theme">Light mode</option>
         </select>
     </div>
     <script type="text/javascript">
         let theme = document.getElementById('theme').value;
+        let background = document.getElementById('container');
     </script>
 </body>
 
