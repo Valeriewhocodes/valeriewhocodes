@@ -1,0 +1,25 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+align-items: baseline;
+}
+
+
+.tariff {
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+  
+}
+
+.tariff-name {
+  border: 1px solid black;
+
+}
+
+.selected {
+background-color:blueviolet;
+}
