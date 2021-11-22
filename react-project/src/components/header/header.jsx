@@ -1,19 +1,17 @@
-import React from 'react';
-function Header(){
-return (
-<div className="header-container">
-    <div className="header-logo">
-        <img src="https://sstk.biz/images/studystacklogo.svg"></img>
-    </div>
-    <div className="header-buttons-area">
-        <button className="header-search">
-            <img src="https://sstk.biz/images/search-icon.png"></img>
-        </button>
-        <button className="header-login">Log in</button>
-        <button className="header-signup">Sign up</button>
-    </div>
-</div>
+import React from "react";
+import './_header.scss';
 
-)
+function Header() {
+  return (
+    <div className="header-container">
+      <a href="#" className="header-logo-area">
+        <img className="header-logo" src="https://sstk.biz/images/studystacklogo.svg" alt="logo"></img>
+      </a>
+      <div className="header-buttons-area">
+        <a href="#" className="header-login">Log in</a>
+        <a href="#" className="header-signup">Sign up</a>
+      </div>
+    </div>
+  );
 }
-export default Header
+export default Header;

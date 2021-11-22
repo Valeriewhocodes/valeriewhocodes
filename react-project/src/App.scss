@@ -1,3 +1,6 @@
-@import "/react-project/src/components/header/header";
-@import "/react-project/src/components/card/card";
-@import "/react-project/src/components/footer/footer";
+.App {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+}
