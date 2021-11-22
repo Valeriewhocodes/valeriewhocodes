@@ -1,7 +1,5 @@
 import React from "react";
 
-import isSelected from './App.js';
-
 function Tariff(props) {
     let classTariff = "";
     if(props.isSelected) classTariff="selected";

@@ -1,0 +1,32 @@
+.App {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tariff {
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  text-align: center;
+}
+
+.tariff .tariff-name {
+  border: 1px solid black;
+}
+
+.selected {
+  background-color: blueviolet;
+  height: 230px;
+}
+/*# sourceMappingURL=App.css.map */
