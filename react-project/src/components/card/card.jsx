@@ -10,7 +10,6 @@ return (
 <div className="card-container">
     <p className="card-english-word">{props.english}</p>
     <p className="card-transcription">{props.transcription}</p>
-    
     <button onClick={handleChange} className="card-check-button">{pressed ? [props.russian] : 'Check'}</button>
 </div>
 )
