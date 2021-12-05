@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+
 import "./App.scss";
 import Header from "./components/header/header";
 import Card from "./components/card/card";
@@ -50,19 +51,46 @@ const cards = [
 ];
 
 function App() {
+  const [indexArray, setIndexArray] = useState(0);
+
+  const slideRight = () => {
+    if (indexArray < cards.length - 1) {
+      setIndexArray(indexArray + 1);
+    }
+  };
+
+  const slideLeft = () => {
+    if (indexArray > 0) {
+      setIndexArray(indexArray - 1);
+    }
+  };
+
   return (
     <div className="App">
-      <Header></Header>
+      <Header className="header-area"></Header>
       <div className="main-area">
-        {cards.map((card) => (
-          <Card
-            english={card.english}
-            transcription={card.transcription}
-            russian={card.russian}
-          ></Card>
-        ))}
+        <button className="arrow-img-area" onClick={slideLeft}>
+          <img
+            className="arrow-img"
+            src="https://cdn-icons-png.flaticon.com/512/54/54321.png"
+            alt="previous"
+          />
+        </button>
+        <Card
+          english={cards[indexArray].english}
+          transcription={cards[indexArray].transcription}
+          russian={cards[indexArray].russian}
+        ></Card>
+        <button className="arrow-img-area" onClick={slideRight}>
+          <img
+            className="arrow-img"
+            src="https://cdn-icons-png.flaticon.com/512/54/54833.png"
+            alt="next"
+          />
+        </button>
+        <div className="cards-count">{indexArray + 1 + "/" + cards.length}</div>
       </div>
-      <Footer></Footer>
+      <Footer className="footer-area"></Footer>
     </div>
   );
 }

@@ -10,7 +10,7 @@
       flex-wrap: nowrap;
 }
 
-.main-area {
+.App .main-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,5 +21,36 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 65vh;
+}
+
+.App .main-area .arrow-img-area {
+  width: 55px;
+  height: 50px;
+  background-color: white;
+  border-radius: 15px;
+  border: none;
+}
+
+.App .main-area .arrow-img-area .arrow-img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.App .main-area .arrow-img-area:hover {
+  background-color: #89c951;
+}
+
+.App .main-area .arrow-img-area:active {
+  background-color: #629139;
+}
+
+.App .main-area .cards-count {
+  position: absolute;
+  margin-top: 45vh;
+  font-weight: bolder;
 }
 /*# sourceMappingURL=App.css.map */
