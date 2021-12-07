@@ -4,6 +4,9 @@ import "./App.scss";
 import Header from "./components/header/header";
 import Card from "./components/card/card";
 import Footer from "./components/footer/footer";
+import TableHeader from "./components/table/table-header";
+import TableInputs from "./components/table/table-inputs";
+import TableBody from "./components/table/table-body";
 
 const cards = [
   {
@@ -68,6 +71,7 @@ function App() {
   return (
     <div className="App">
       <Header className="header-area"></Header>
+      
       <div className="main-area">
         <button className="arrow-img-area" onClick={slideLeft}>
           <img
@@ -90,6 +94,19 @@ function App() {
         </button>
         <div className="cards-count">{indexArray + 1 + "/" + cards.length}</div>
       </div>
+
+      <table className="table-area">
+        <TableHeader></TableHeader>
+        <TableInputs></TableInputs>
+        {cards.map((card) => (
+          <TableBody
+            english={card.english}
+            transcription={card.transcription}
+            russian={card.russian}
+          ></TableBody>
+        ))}
+      </table>
+
       <Footer className="footer-area"></Footer>
     </div>
   );

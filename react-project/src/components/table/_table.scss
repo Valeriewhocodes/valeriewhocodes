@@ -1,0 +1,46 @@
+.table-area {
+    margin: 10vh 10vw;
+    border: 1px solid #dddddd;
+    border-collapse: collapse;
+
+    .table-header-container {
+        background-color: rgb(137, 201, 81);
+    }
+
+    .table-cell {
+        font-weight: bold;
+        padding: 5px;
+        border: 1px solid #dddddd;
+        width: 20%;
+    }
+
+    .table-button-save,
+    .table-button-edit,
+    .table-button-delete {
+        border: none;
+        font-weight: bold;
+        width: 4em;
+        height: 1.5em;
+        margin: 0.5em;
+        border-radius: 15px;
+    }
+
+    .table-button-save {
+        background: rgb(137, 201, 81);
+        width: 5em;
+    }
+
+    .table-button-edit {
+        background: rgb(251, 255, 36)
+    }
+
+    .table-button-delete {
+        background: rgb(255, 38, 38);
+    }
+
+    .table-button-save:hover,
+    .table-button-edit:hover,
+    .table-button-delete:hover {
+        border: 0.5px solid black;
+    }
+}

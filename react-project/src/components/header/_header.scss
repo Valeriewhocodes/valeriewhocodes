@@ -1,4 +1,6 @@
 .header-container {
+    position: sticky;
+    top: 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -19,7 +21,7 @@
     .header-buttons-area {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         width: 15vw;
 
@@ -35,7 +37,8 @@
     }
 
     .header-login,
-    .header-signup {
+    .header-signup,
+    .header-cards {
         text-decoration: none;
         color: white;
         font-weight: 500;
@@ -43,13 +46,15 @@
     }
 
     .header-login:hover,
-    .header-signup:hover {
+    .header-signup:hover,
+    .header-cards:hover {
         color: rgb(137, 201, 81);
         text-decoration: underline;
     }
 
     .header-login:active,
-    .header-signup:active {
+    .header-signup:active,
+    .header-cards:active {
         color: rgb(98, 145, 57);
         text-decoration: underline;
     }

@@ -8,6 +8,10 @@
           flex-direction: column;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  height: 100vh;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
 }
 
 .App .main-area {
@@ -52,5 +56,9 @@
   position: absolute;
   margin-top: 45vh;
   font-weight: bolder;
+}
+
+.App .table-area .table-header-container {
+  width: 100%;
 }
 /*# sourceMappingURL=App.css.map */
